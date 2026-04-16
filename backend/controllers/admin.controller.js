@@ -1,7 +1,8 @@
 import InventoryItem from '../models/InventoryItem.js';
 import Order from '../models/Order.js';
 import { body, validationResult } from 'express-validator';
-import { io } from '../server.js';
+
+const io = req.app.get('io');
 
 // @desc    Get all inventory items
 // @route   GET /api/admin/inventory
