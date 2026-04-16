@@ -1,8 +1,9 @@
 import axios from "axios";
 
 // Use environment variable (Vercel + local)
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL;
-
+const API_BASE_URL =
+  import.meta.env.VITE_API_BASE_URL ||
+  "https://pizza-builder-fullstack.onrender.com/api";
 // Create axios instance
 const api = axios.create({
   baseURL: API_BASE_URL,
