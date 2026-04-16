@@ -1,6 +1,6 @@
 // backend/controllers/order_controller.js
 
-import Order from '../models/order.model.js';
+import Order from '../models/Order.js';
 
 // ✅ CREATE ORDER
 export const createOrder = async (req, res, next) => {
